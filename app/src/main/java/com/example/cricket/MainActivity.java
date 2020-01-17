@@ -36,14 +36,12 @@ public class MainActivity extends AppCompatActivity {
                 {
                     Toast.makeText(MainActivity.this, "Please enter an appropriate name", Toast.LENGTH_SHORT).show();
                 }
-                else
-                {
+                else {
                     Intent intent_to_display_rules;
 
                     intent_to_display_rules = new Intent(MainActivity.this, DisplayRules.class);
                     intent_to_display_rules.putExtra("Name", name);
                     startActivity(intent_to_display_rules);
-
 
                 }
             }
